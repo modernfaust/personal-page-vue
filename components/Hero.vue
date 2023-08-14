@@ -1,11 +1,7 @@
 <template>
-  <div class="flex mx-8 py-4">
-    <img class="h-10" src="../assets/images/logo.png"/>
-    <div class="ms-auto">
-      <Icon class="w-10 h-10" icon="faGithub" />
-      <Icon class="w-10 h-10" icon="faLinkedin" />
-      <Icon class="w-10 h-10" icon="faFile" />
-    </div>
+  <div class="flex flex-col items-center">
+    <img class="w-1/2 object-scale-down" src="../assets/images/shiba_inu.png" />
+    <p>content goes here</p>
   </div>
 </template>
 <script lang="ts">
@@ -14,7 +10,7 @@ import { PropType } from "vue/types";
 import Icon from "./Icon.vue";
 
 export default {
-  name: "ContactBar",
+  name: "Hero",
   components: {
     Icon,
   },

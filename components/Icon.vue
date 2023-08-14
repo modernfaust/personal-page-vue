@@ -2,13 +2,12 @@
   <component
     :is="getComponent(icon)"
     :icon="getIcon(icon)"
-    class="base-icon"
     v-bind="$attrs"
     v-on="$listeners"
   />
 </template>
 <script>
-import { camelCase } from "lodash";
+import { snakeCase,camelCase } from "lodash";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
@@ -20,15 +19,29 @@ const FAIcons = Object.freeze({
   faFile,
 });
 
+const CustomIcons = Object.freeze({});
+
 Object.values(FAIcons).forEach((icon) => {
   library.add(icon);
 });
 
-export const isValidIcon = (value) => {
-  Object.values(FAIcons).includes(camelCase(value));
-};
+export const Icons = Object.freeze(
+  [...Object.keys(FAIcons), ...Object.keys(CustomIcons)].sort().reduce(
+    (obj, val) => ({
+      ...obj,
+      [snakeCase(val).toUpperCase()]: val,
+    }),
+    {}
+  )
+);
 
-export const getComponent = () => FontAwesomeIcon;
+export const isValidIcon = (value) =>
+  Object.values(Icons).includes(camelCase(value));
+
+const isCustomIcon = (iconName) => Object.keys(CustomIcons).includes(iconName);
+
+export const getComponent = (iconName) =>
+  isCustomIcon(iconName) ? CustomIcons[iconName] : FontAwesomeIcon;
 
 export const getIcon = (icon) => FAIcons[camelCase(icon)] || null;
 
@@ -49,8 +62,4 @@ export default {
 };
 </script>
 <style>
-.base-icon {
-  height: 1em;
-  width: 1em;
-}
 </style>
