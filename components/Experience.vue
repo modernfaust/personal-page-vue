@@ -1,21 +1,32 @@
 <template>
-    <div class="flex flex-col items-center">
+  <div>
+    <div v-for="item in experience" class="flex flex-col items-center">
+      <FeatureCard
+        :image="item.image"
+        :name="item.companyName"
+        :subheader="item.position"
+        :date="item.date"
+        :description="item.description"
+      />
     </div>
-  </template>
-  <script lang="ts">
-  import { defineComponent } from "vue/types/v3-define-component";
-  import { PropType } from "vue/types";
-  import Icon from "./Icon.vue";
-  import FeatureCard from "./FeatureCard.vue";
+  </div>
+</template>
+<script lang="ts">
+import { defineComponent } from "vue/types/v3-define-component";
+import { PropType } from "vue/types";
+import FeatureCard from "./FeatureCard.vue";
+import { ExperienceItem } from "../constants/interfaces.ts";
 
-  export default {
-    name: "Experience",
-    components: {
-      Icon,
-      FeatureCard,
+export default {
+  name: "Experience",
+  props: {
+    experience: {
+      type: Array<ExperienceItem>,
     },
-  };
-  </script>
-  <style>
-  </style>
-  
+  },
+  components: {
+    FeatureCard,
+  },
+};
+</script>
+<style></style>

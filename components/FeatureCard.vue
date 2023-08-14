@@ -1,9 +1,10 @@
 <template>
   <div class="flex flex-col">
-    <img src="../assets/images/bambeehr.jpg" />
+    <img class="w-20" :src="image" />
     <div class="flex flex-col">
-      <p>{{ companyName }}</p>
-      <p>{{ position }}</p>
+      <p>{{ name }}</p>
+      <p>{{ subheader }}</p>
+      <p>{{ date }}</p>
     </div>
     <ul class="flex flex-col">
       <li v-for="item in description">
@@ -25,15 +26,23 @@ export default {
   props: {
     image: {
       type: String,
+      required: true,
+      default: "",
     },
-    companyName: {
+    name: {
       type: String,
     },
-    position: {
+    subheader: {
+      type: String,
+    },
+    date: {
       type: String,
     },
     description: {
-      type: Array,
+      type: Array<String>,
+    },
+    languages: {
+      type: Array<String>,
     },
   },
 };

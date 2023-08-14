@@ -14,7 +14,7 @@ import { PropType } from "vue/types";
 import Icon from "./Icon.vue";
 
 export default {
-  name: "ContactBar",
+  name: "NavBar",
   components: {
     Icon,
   },

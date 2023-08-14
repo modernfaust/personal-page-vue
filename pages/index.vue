@@ -1,21 +1,35 @@
 <template>
   <div class="bg-slate-500">
-    <ContactBar/>
+    <NavBar/>
     <Hero/>
+    <Experience :experience="copy.experience"/>
+    <Projects :projects="copy.projects"/>
+    <Footer/>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
-import ContactBar from '~/components/ContactBar.vue';
-import Hero from '~/components/Hero.vue';
+import NavBar from '../components/NavBar.vue';
+import Hero from '../components/Hero.vue';
+import Experience from '../components/Experience.vue';
+import Footer from '../components/Footer.vue';
+import copy from "../constants/copy.js";
 
 export default Vue.extend({
   name: 'IndexPage',
   layout: 'empty',
   components: {
-    ContactBar,
+    NavBar,
     Hero,
-  }
+    Experience,
+    Footer,
+    copy,
+  },
+  data () {
+    return {
+      copy:copy,
+    }
+  },
 })
 </script>
