@@ -2,9 +2,9 @@
   <div class="flex mx-8 py-4 lg:mx-24">
     <img class="h-10" src="../assets/images/logo.png"/>
     <div class="ms-auto">
-      <Icon class="w-10 h-10" icon="faGithub" />
-      <Icon class="w-10 h-10" icon="faLinkedin" />
-      <Icon class="w-10 h-10" icon="faFile" />
+      <Icon class="w-10 h-10 text-blue-400" icon="faGithub" />
+      <Icon class="w-10 h-10 text-blue-400" icon="faLinkedin" />
+      <Icon class="w-10 h-10 text-blue-400" icon="faFile" />
     </div>
   </div>
 </template>

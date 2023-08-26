@@ -13,12 +13,12 @@
   import { PropType } from "vue/types";
   import Icon from "./Icon.vue";
   
-  export default {
+  export default ({
     name: "Footer",
     components: {
       Icon,
     },
-  };
+  });
   </script>
   <style>
   .nuxt-logo {

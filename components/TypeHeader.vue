@@ -25,7 +25,7 @@ export default {
     /** One of `mega`, `giga`, `tera`, or `peta`. */
     variant: {
       type: String,
-      default: "peta",
+      default: "tera",
     },
     /** One of `regular`, or `strong`. */
     weight: {

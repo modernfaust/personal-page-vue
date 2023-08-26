@@ -1,3 +1,10 @@
+export interface HeroItem {
+    image:string,
+    header:string,
+    subheader:string,
+    description:string,
+}
+
 export interface ExperienceItem {
     image:string,
     companyName:string,

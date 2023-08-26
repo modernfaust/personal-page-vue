@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="py-8">
     <div v-for="item in experience" class="flex flex-col items-center">
       <FeatureCard
         :image="item.image"
@@ -17,7 +17,7 @@ import { PropType } from "vue/types";
 import FeatureCard from "./FeatureCard.vue";
 import { ExperienceItem } from "../constants/interfaces.ts";
 
-export default {
+export default ({
   name: "Experience",
   props: {
     experience: {
@@ -27,6 +27,6 @@ export default {
   components: {
     FeatureCard,
   },
-};
+});
 </script>
 <style></style>

@@ -1,7 +1,9 @@
 const content = {
   hero: {
-    image: "../assets/images/shiba_inu.png",
-    description: "Testing copy",
+    image: "/shiba_inu.png",
+    header: "Hi, I'm Edward",
+    subheader: "I'm a software engineer in Toronto",
+    description: "",
   },
   experience: [
     {
@@ -22,7 +24,7 @@ const content = {
       ],
     },
     {
-      image: "",
+      image: "/broadridge.webp",
       companyName: "Broadridge Financial",
       position: "Support Analyst",
       date: "April 2020 to Present",

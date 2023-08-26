@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-slate-500">
+  <div class="bg-slate-800">
     <NavBar/>
-    <Hero/>
+    <Hero :hero="copy.hero"/>
     <Experience :experience="copy.experience"/>
     <Projects :projects="copy.projects"/>
     <Footer/>
