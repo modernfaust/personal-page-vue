@@ -40,27 +40,38 @@ const content = {
     {
       image: "",
       projectName: "Personal Page",
-      languages: ["Vue","TypeScript","Nuxt"],
-      description: [""],
+      languages: ["Vue", "TypeScript", "NuxtJS", "Tailwind"],
+      description: ["Secure, general purpose portfolio website framework optimized for SEO that supports Server Side Rendering",
+        "Powered by Nuxt2"],
+      links: [
+        ["github", "url_here"], ["webpage", "url_here"],
+      ],
     },
     {
       image: "",
-      projectName: "Mainframe Work Order Processor",
-      languages: ["VBA", "SQL", "Bash"],
-      description: [""],
+      projectName: "Mutual Funds Order Processing Tools",
+      languages: ["VBA", "SQL", "Python", "Bash"],
+      description: ["Proprietary tooling & automation modules for Broadridge enhancing back office mutual funds transaction processing",
+        "Fast scraping, manipulation, classification, visualization of mutual fund data from mainframe",
+        "Enhances operations team velocity by 80%"],
     },
     {
       image: "",
       projectName: "Still Alive",
       languages: ["JavaScript", "HTML", "CSS"],
-      description: [""],
+      description: ["Procedurally generated top down shooting game",
+        "Unique physics and map generation engine"],
+      links: [["github", "url_here"], ["webpage", "url_here"]],
     },
     {
       image: "",
       projectName: "Lost in Funland",
-      languages: ["JavaScript","HTML","CSS"],
-      description: [""],
+      languages: ["JavaScript", "HTML", "CSS"],
+      description: ["Procedurally generated infinite scrolling game"],
     },
+  ],
+  skills: [
+    "javascript", "sql", "python", "react", "vue", "nuxt", "html", "css", "sass", "java", "c#",
   ],
 };
 
