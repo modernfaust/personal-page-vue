@@ -3,10 +3,10 @@
     <img class="w-1/2 object-scale-down" :src="hero.image" />
     <div class="w-1/2 flex flex-col items-center">
       <div class="flex flex-col items-start">
-        <TypeHeader class="text-blue-400" variant="peta" weight="strong">
+        <TypeHeader class="text-blue-900" variant="peta" weight="strong">
           {{ hero.header }}
         </TypeHeader>
-        <TypeHeader class="text-blue-400" variant="medium" weight="strong">
+        <TypeHeader class="text-blue-900" variant="medium" weight="strong">
           {{ hero.subheader }}
         </TypeHeader>
       </div>

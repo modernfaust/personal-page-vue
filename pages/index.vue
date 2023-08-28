@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-800">
+  <div class="bg-slate-100">
     <NavBar/>
     <Hero :hero="copy.hero"/>
     <Experience :experience="copy.experience"/>

@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'personal-page-vue',
+    title: 'Edward Lee',
     htmlAttrs: {
       lang: 'en'
     },

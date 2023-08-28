@@ -1,10 +1,10 @@
 <template>
     <div class="flex mx-8 py-4">
-      <img class="h-10" src="../assets/images/logo.png"/>
+      <TypeBody>Copyright Edward Lee 2023</TypeBody>
       <div class="ms-auto">
-        <Icon class="w-10 h-10" icon="faGithub" />
-        <Icon class="w-10 h-10" icon="faLinkedin" />
-        <Icon class="w-10 h-10" icon="faFile" />
+        <Icon class="w-10 h-10 text-blue-900" icon="faGithub" />
+        <Icon class="w-10 h-10 text-blue-900" icon="faLinkedin" />
+        <Icon class="w-10 h-10 text-blue-900" icon="faFile" />
       </div>
     </div>
   </template>
@@ -12,11 +12,13 @@
   import { defineComponent } from "vue/types/v3-define-component";
   import { PropType } from "vue/types";
   import Icon from "./Icon.vue";
-  
+  import TypeBody from "./TypeBody.vue";
+
   export default ({
     name: "Footer",
     components: {
       Icon,
+      TypeBody,
     },
   });
   </script>
