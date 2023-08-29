@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col items-center mx-28 border-2 border-gray-100 rounded-md m-2 w-full">
+  <div class="flex flex-col items-center mx-28 border-2 shadow-xl rounded-md m-2 w-full">
     <div class="flex flex-col items-center p-8">
-      <img class="w-20" :src="image" />
+      <a :href="url"><img class="w-40" :src="image" :alt="alt"/></a>
       <TypeHeader class="text-blue-900">{{ name }}</TypeHeader>
       <TypeSubHeader class="text-blue-900" weight="strong">{{ subheader }}</TypeSubHeader>
       <TypeBody class="text-blue-900" weight="strong">{{ date }}</TypeBody>
@@ -20,8 +20,6 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue/types/v3-define-component";
-import { PropType } from "vue/types";
 import Icon from "./Icon.vue";
 import TypeHeader from "./TypeHeader.vue";
 import TypeSubHeader from "./TypeSubHeader.vue";
@@ -43,6 +41,9 @@ export default {
       required: true,
       default: "",
     },
+    alt: {
+      type:String,
+    },
     name: {
       type: String,
     },
@@ -57,6 +58,9 @@ export default {
     },
     languages: {
       type: Array<string>,
+    },
+    url: {
+      type:String,
     },
   },
   setup(props) {

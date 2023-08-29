@@ -1,6 +1,7 @@
 const content = {
   hero: {
     image: "/shiba_inu.png",
+    alt:"hero_banner",
     header: "Hi, I'm Edward",
     subheader: "I'm a software engineer in Toronto",
     description: "",
@@ -8,7 +9,9 @@ const content = {
   experience: [
     {
       image: "/bambeehr.png",
+      alt:"bambee_logo",
       companyName: "BambeeHR",
+      url:"https://www.bambee.com/",
       position: "Software Engineering Intern",
       date: "February 2023 to Present",
       description: [
@@ -24,9 +27,11 @@ const content = {
       ],
     },
     {
-      image: "/broadridge.webp",
+      image: "/BR.png",
       companyName: "Broadridge Financial",
+      alt:"broadridge_logo",
       position: "Support Analyst",
+      url:"https://www.broadridge.com",
       date: "April 2020 to Present",
       description: [
         "Refactored and maintained process automation & data visualization modules in VBA, resulting in a 40% decrease in task time for the operations department.",
