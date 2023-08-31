@@ -24,8 +24,8 @@ import Icon from "@/components/Icon.vue";
 import TypeHeader from "@/components/TypeHeader.vue";
 import TypeSubHeader from "@/components/TypeSubHeader.vue";
 import TypeBody from "@/components/TypeBody.vue";
+import BaseTag from "@/components/BaseTag.vue";
 import { defineComponent, PropType } from "vue";
-import BaseTag from "./BaseTag.vue";
 
 export default defineComponent({
   name: "FeatureCard",

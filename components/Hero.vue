@@ -14,9 +14,9 @@
   </div>
 </template>
 <script lang="ts">
-import Icon from "./Icon.vue";
-import TypeHeader from "./TypeHeader.vue";
-import { HeroItem } from "../constants/interfaces";
+import Icon from "@/components/Icon.vue";
+import TypeHeader from "@/components/TypeHeader.vue";
+import { HeroItem } from "@/constants/interfaces";
 import { defineComponent, PropType } from "vue";
 
 export default defineComponent({

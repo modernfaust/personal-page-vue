@@ -9,16 +9,15 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue/types/v3-define-component";
-import { PropType } from "vue/types";
 import Icon from "@/components/Icon.vue";
+import { defineComponent, PropType } from "vue";
 
-export default {
+export default defineComponent({
   name: "NavBar",
   components: {
     Icon,
   },
-};
+});
 </script>
 <style>
 .nuxt-logo {

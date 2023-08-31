@@ -5,7 +5,7 @@
         `type-subheader-${variant}`,
         `type-subheader-${weight}`,
       ]"
-      class="type-subheader font-poppins"
+      class="type-subheader font-PTSerif"
       v-bind="$attrs"
       v-on="$listeners"
     >

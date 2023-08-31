@@ -2,7 +2,7 @@
   <component
     :is="tag"
     :class="[`type-body-${variant}`, `type-body-${weight}`]"
-    class="type-body font-poppins"
+    class="type-body font-PTSerif"
     v-bind="$attrs"
     v-on="$listeners"
   >

@@ -5,7 +5,7 @@
       `type-header-${variant}`,
       `type-header-${weight}`,
     ]"
-    class="type-header font-poppins text-center"
+    class="type-header text-center font-PTSerif"
     v-bind="$attrs"
     v-on="$listeners"
   >

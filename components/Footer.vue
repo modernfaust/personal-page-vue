@@ -10,12 +10,11 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue/types/v3-define-component";
-import { PropType } from "vue/types";
-import Icon from "./Icon.vue";
-import TypeBody from "./TypeBody.vue";
+import Icon from "@/components/Icon.vue";
+import TypeBody from "@/components/TypeBody.vue";
+import { defineComponent } from "vue";
 
-export default {
+export default defineComponent({
   name: "Footer",
   components: {
     Icon,
@@ -26,7 +25,7 @@ export default {
       return new Date().getFullYear();
     },
   }
-};
+});
 </script>
 <style>
 .nuxt-logo {

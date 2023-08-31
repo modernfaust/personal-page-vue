@@ -3,25 +3,26 @@
 </template>
 <script lang="ts">
 import {DividerVariants} from "../constants/enums";
+import { defineComponent, PropType } from "vue";
 
-export default {
+export default defineComponent({
     name: "BaseDivider",
     props: {
         variant: {
-            type: String,
+            type: String as PropType<string>,
             default:'solid',
             validator:(value) => Object.values(DividerVariants).includes(value as DividerVariants)
         },
         color: {
-            type: String,
+            type: String as PropType<string>,
             default: "bg-neutral-200",
         },
         size: {
-            type: String,
+            type: String as PropType<string>,
         },
         outline: {
-            type: String,
+            type: String as PropType<string>,
         },
     },
-}
+});
 </script>

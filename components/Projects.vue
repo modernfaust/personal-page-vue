@@ -13,10 +13,10 @@
     </div>
   </template>
   <script lang="ts">
-  import FeatureCard from "./FeatureCard.vue";
-  import { ProjectItem } from "../constants/interfaces.js";
-  import BaseDivider from "./BaseDivider.vue";
-  import TypeHeader from "./TypeHeader.vue";
+  import FeatureCard from "@/components/FeatureCard.vue";
+  import { ProjectItem } from "@/constants/interfaces.js";
+  import BaseDivider from "@/components/BaseDivider.vue";
+  import TypeHeader from "@/components/TypeHeader.vue";
   import { defineComponent, PropType } from "vue";
 
   export default defineComponent({

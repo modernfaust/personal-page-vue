@@ -1,34 +1,39 @@
 <template>
     <div v-if="text" class="border-solid border-2 rounded-lg font-bold" :class="`${variant === 'solid' ? bgColor : '' } ${textColor} ${borderColor}`">
-        <span class="p-4 font-poppins">{{ text }}</span>
+        <TypeBody class="p-4">{{ text }}</TypeBody>
     </div>
 </template>
 <script lang="ts">
-import {TagVariants} from "../constants/enums";
+import TypeBody from "./TypeBody.vue";
+import {TagVariants} from "@/constants/enums";
+import { defineComponent, PropType } from "vue";
 
-export default {
+export default defineComponent({
     name:"BaseTag",
+    components: {
+        TypeBody,
+    },
     props: {
         text: {
-            type:String,
+            type:String as PropType<string>,
         },
         textColor: {
-            type:String,
+            type:String as PropType<string>,
             default:"text-neutral-200",
         },
         borderColor: {
-            type:String,
+            type:String as PropType<string>,
             default:"border-neutral-200",
         },
         bgColor: {
-            type:String,
+            type:String as PropType<string>,
             default:"bg-blue-400",
         },
         variant: {
-            type:String,
+            type:String as PropType<string>,
             default:'solid',
             validator:(value) => Object.values(TagVariants).includes(value as TagVariants)
         },
     },
-}
+});
 </script>
