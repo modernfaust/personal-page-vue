@@ -1,6 +1,7 @@
 const content = {
   hero: {
     image: "/shiba_inu.png",
+    alt:"hero_banner",
     header: "Hi, I'm Edward",
     subheader: "I'm a software engineer in Toronto",
     description: "",
@@ -8,7 +9,9 @@ const content = {
   experience: [
     {
       image: "/bambeehr.png",
+      alt:"bambee_logo",
       companyName: "BambeeHR",
+      url:"https://www.bambee.com/",
       position: "Software Engineering Intern",
       date: "February 2023 to Present",
       description: [
@@ -24,9 +27,11 @@ const content = {
       ],
     },
     {
-      image: "/broadridge.webp",
+      image: "/BR.png",
       companyName: "Broadridge Financial",
+      alt:"broadridge_logo",
       position: "Support Analyst",
+      url:"https://www.broadridge.com",
       date: "April 2020 to Present",
       description: [
         "Refactored and maintained process automation & data visualization modules in VBA, resulting in a 40% decrease in task time for the operations department.",
@@ -40,27 +45,38 @@ const content = {
     {
       image: "",
       projectName: "Personal Page",
-      languages: ["Vue","TypeScript","Nuxt"],
-      description: [""],
+      languages: ["Vue", "TypeScript", "NuxtJS", "Tailwind"],
+      description: ["Secure, general purpose portfolio website framework optimized for SEO that supports Server Side Rendering",
+        "Powered by Nuxt2"],
+      links: [
+        ["github", "url_here"], ["webpage", "url_here"],
+      ],
     },
     {
       image: "",
-      projectName: "Mainframe Work Order Processor",
-      languages: ["VBA", "SQL", "Bash"],
-      description: [""],
+      projectName: "Mutual Funds Order Processing Tools",
+      languages: ["VBA", "SQL", "Python", "Bash"],
+      description: ["Proprietary tooling & automation modules for Broadridge enhancing back office mutual funds transaction processing",
+        "Fast scraping, manipulation, classification, visualization of mutual fund data from mainframe",
+        "Enhances operations team velocity by 80%"],
     },
     {
       image: "",
       projectName: "Still Alive",
       languages: ["JavaScript", "HTML", "CSS"],
-      description: [""],
+      description: ["Procedurally generated top down shooting game",
+        "Unique physics and map generation engine"],
+      links: [["github", "url_here"], ["webpage", "url_here"]],
     },
     {
       image: "",
       projectName: "Lost in Funland",
-      languages: ["JavaScript","HTML","CSS"],
-      description: [""],
+      languages: ["JavaScript", "HTML", "CSS"],
+      description: ["Procedurally generated infinite scrolling game"],
     },
+  ],
+  skills: [
+    "javascript", "sql", "python", "react", "vue", "nuxt", "html", "css", "sass", "java", "c#",
   ],
 };
 

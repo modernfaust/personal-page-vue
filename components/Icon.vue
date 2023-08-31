@@ -1,17 +1,15 @@
 <template>
-  <component
-    :is="getComponent(icon)"
-    :icon="getIcon(icon)"
-    v-bind="$attrs"
-    v-on="$listeners"
-  />
+  <div>
+    <component :is="getComponent(icon)" :icon="getIcon(icon)" v-bind="$attrs" v-on="$listeners" :class="iconSizing()"/>
+  </div>
 </template>
 <script>
-import { snakeCase,camelCase } from "lodash";
+import { snakeCase, camelCase } from "lodash";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {IconSizes} from "../constants/enums";
 
 const FAIcons = Object.freeze({
   faGithub,
@@ -52,14 +50,29 @@ export default {
       required: true,
       validator: isValidIcon,
     },
+    size: {
+      type:String,
+      default:"small",
+      validator:(value)=>Object.values(IconSizes).includes(value)
+    }
   },
-  setup() {
+  setup(props) {
+    const iconSizing=()=>{
+      switch(props.size) {
+        case "small":
+          return "w-4 h-4";
+        case "medium":
+          return "w-10 h-10";
+        default:
+          return "w-16 h-16";
+      }
+    }
     return {
       getComponent,
       getIcon,
+      iconSizing,
     };
   },
 };
 </script>
-<style>
-</style>
+<style></style>

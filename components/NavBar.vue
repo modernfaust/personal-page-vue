@@ -1,10 +1,10 @@
 <template>
   <div class="flex mx-8 py-4 lg:mx-24">
-    <img class="h-10" src="../assets/images/logo.png"/>
-    <div class="ms-auto">
-      <Icon class="w-10 h-10 text-blue-400" icon="faGithub" />
-      <Icon class="w-10 h-10 text-blue-400" icon="faLinkedin" />
-      <Icon class="w-10 h-10 text-blue-400" icon="faFile" />
+    <router-link to="/"><img class="h-10" src="../assets/images/logo.png" alt="edward_logo"/></router-link>
+    <div class="flex flex-row gap-4 ms-auto">
+      <a href="https://github.com/modernfaust"><Icon class="text-blue-900" icon="faGithub" size="medium"/></a>
+      <a href="https://www.linkedin.com/in/edward-lee-183b878b"><Icon class="text-blue-900" icon="faLinkedin" size="medium"/></a>
+      <a href="www.github.com"><Icon class="text-blue-900" icon="faFile" size="medium"/></a>
     </div>
   </div>
 </template>

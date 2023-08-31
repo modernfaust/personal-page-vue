@@ -1,13 +1,15 @@
 <template>
-  <div class="flex flex-col items-center lg:flex-row lg:mx-24">
-    <img class="w-1/2 object-scale-down" :src="hero.image" />
+  <div class="flex flex-col items-center lg:flex-row w-full">
+    <img class="w-1/2 object-scale-down" :src="hero?.image" :alt="hero?.alt"/>
     <div class="w-1/2 flex flex-col items-center">
-      <TypeHeader class="text-blue-400" variant="peta" weight="strong">
-        {{hero.header}}
-      </TypeHeader>
-      <TypeHeader class="text-blue-400" variant="medium" weight="strong">
-        {{hero.subheader}}
-      </TypeHeader>
+      <div class="flex flex-col items-start">
+        <TypeHeader class="text-blue-900" variant="peta" weight="strong">
+          {{ hero?.header }}
+        </TypeHeader>
+        <TypeHeader class="text-blue-900" variant="medium" weight="strong">
+          {{ hero?.subheader }}
+        </TypeHeader>
+      </div>
     </div>
   </div>
 </template>
@@ -30,4 +32,3 @@ export default defineComponent({
   },
 });
 </script>
-<style></style>
