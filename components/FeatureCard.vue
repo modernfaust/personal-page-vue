@@ -42,8 +42,11 @@ export default defineComponent({
       required: true,
       default: "",
     },
+    url: {
+      type:String as PropType<string>, 
+    },
     alt: {
-      type:String,
+      type:String as PropType<string>,
     },
     name: {
       type: String as PropType<string>,
@@ -81,6 +84,6 @@ export default defineComponent({
       hasDescription,
     }
   }
-};
+});
 </script>
 <style></style>

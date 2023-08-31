@@ -19,6 +19,8 @@
 import { defineComponent, PropType } from "vue";
 import FeatureCard from "@/components/FeatureCard.vue";
 import { ExperienceItem } from "@/constants/interfaces";
+import TypeHeader from "./TypeHeader.vue";
+import BaseDivider from "./BaseDivider.vue";
 
 export default defineComponent({
   name: "Experience",
