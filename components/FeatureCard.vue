@@ -14,14 +14,13 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue/types/v3-define-component";
-import { PropType } from "vue/types";
-import Icon from "./Icon.vue";
-import TypeHeader from "./TypeHeader.vue";
-import TypeSubHeader from "./TypeSubHeader.vue";
-import TypeBody from "./TypeBody.vue";
+import Icon from "@/components/Icon.vue";
+import TypeHeader from "@/components/TypeHeader.vue";
+import TypeSubHeader from "@/components/TypeSubHeader.vue";
+import TypeBody from "@/components/TypeBody.vue";
+import { defineComponent, PropType } from "vue";
 
-export default {
+export default defineComponent({
   name: "FeatureCard",
   components: {
     Icon,
@@ -31,26 +30,26 @@ export default {
   },
   props: {
     image: {
-      type: String,
+      type: String as PropType<string>,
       required: true,
       default: "",
     },
     name: {
-      type: String,
+      type: String as PropType<string>,
     },
     subheader: {
-      type: String,
+      type: String as PropType<string>,
     },
     date: {
-      type: String,
+      type: String as PropType<string>,
     },
     description: {
-      type: Array<String>,
+      type: Array as PropType<Array<string>>
     },
     languages: {
-      type: Array<String>,
+      type: Array as PropType<Array<string>>
     },
   },
-};
+});
 </script>
 <style></style>

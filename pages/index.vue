@@ -10,11 +10,11 @@
 
 <script>
 import Vue from 'vue'
-import NavBar from '../components/NavBar.vue';
-import Hero from '../components/Hero.vue';
-import Experience from '../components/Experience.vue';
-import Footer from '../components/Footer.vue';
-import copy from "../constants/copy.js";
+import NavBar from '@/components/NavBar.vue';
+import Hero from '@/components/Hero.vue';
+import Experience from '@/components/Experience.vue';
+import Footer from '@/components/Footer.vue';
+import copy from "@/constants/copy.js";
 
 export default Vue.extend({
   name: 'IndexPage',

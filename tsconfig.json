@@ -2,37 +2,39 @@
   "compilerOptions": {
     "target": "ES2018",
     "module": "ESNext",
-    "lib": [
-      "ESNext",
-      "ESNext.AsyncIterable",
-      "DOM"
-    ],
+    "moduleResolution": "node",
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
     "allowJs": true,
     "sourceMap": true,
     "strict": true,
     "noEmit": true,
-    "experimentalDecorators": true,
-    "baseUrl": ".",
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "strictFunctionTypes": true,
+    "baseUrl": "./",
     "paths": {
-      "~/*": [
-        "./*"
-      ],
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"],
+      "~/*": ["./*"],
+      "@@/*": ["./*"],
+      "~~/*": ["./*"]
     },
-    "types": [
-      "@nuxt/types",
-      "@types/node"
+    "plugins": [
+      {
+        "transform": "ts-auto-mock/transformer",
+        "cacheBetweenTests": false
+      }
     ],
-    "allowImportingTsExtensions": true,
-    "moduleResolution": "Node"
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+      "webpack-env",
+      "jest",
+      "@types/jest"
+    ]
   },
-  "include": ["**/*.ts",],
-  "exclude": [
-    "node_modules",
-    ".nuxt",
-    "dist"
-  ]
+  "include": ["**/*.ts", "**/*.vue", "**/*.test.ts", "**/*.test.js"],
+  "exclude": ["node_modules"]
 }

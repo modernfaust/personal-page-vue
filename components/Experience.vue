@@ -12,16 +12,15 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue/types/v3-define-component";
-import { PropType } from "vue/types";
-import FeatureCard from "./FeatureCard.vue";
-import { ExperienceItem } from "../constants/interfaces.ts";
+import { defineComponent, PropType } from "vue";
+import FeatureCard from "@/components/FeatureCard.vue";
+import { ExperienceItem } from "@/constants/interfaces";
 
-export default ({
+export default defineComponent({
   name: "Experience",
   props: {
     experience: {
-      type: Array<ExperienceItem>,
+      type: Array as PropType<Array<ExperienceItem>>
     },
   },
   components: {
