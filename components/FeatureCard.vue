@@ -20,7 +20,7 @@
   </div>
 </template>
 <script lang="ts">
-import Icon from "@/components/Icon.vue";
+import Icon from "@/components/BaseIcon.vue";
 import TypeHeader from "@/components/TypeHeader.vue";
 import TypeSubHeader from "@/components/TypeSubHeader.vue";
 import TypeBody from "@/components/TypeBody.vue";

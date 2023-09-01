@@ -10,7 +10,7 @@
   </div>
 </template>
 <script lang="ts">
-import Icon from "@/components/Icon.vue";
+import Icon from "@/components/BaseIcon.vue";
 import TypeBody from "@/components/TypeBody.vue";
 import { defineComponent } from "vue";
 

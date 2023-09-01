@@ -1,5 +1,5 @@
 <template>
-    <hr :class="`w-72 h-[1px] mx-auto my-4 ${color} border-0 rounded md:my-10`"/>
+    <hr :class="`w-72 h-[1px] mx-auto my-4 ${color} border-0 rounded tablet:my-10`"/>
 </template>
 <script lang="ts">
 import {DividerVariants} from "../constants/enums";
