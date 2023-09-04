@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <BaseIcon class="text-blue-900" icon="faBars" size="medium" @click="" />
+  <div @click="$emit('reveal',togglePanel())">
+    <BaseIcon class="text-blue-900" :icon="navPanelIcon()" size="medium"/>
   </div>
 </template>
 <script lang="ts">
@@ -8,14 +8,13 @@ import BaseIcon from "@/components/BaseIcon.vue";
 import TypeHeader from "@/components/TypeHeader.vue";
 import TypeSubHeader from "./TypeSubHeader.vue";
 import TypeBody from "./TypeBody.vue";
-import { HeroItem } from "@/constants/interfaces";
-import { defineComponent, PropType } from "vue";
+import { defineComponent, PropType, ref } from "vue";
 
 export default defineComponent({
   name: "HamburgerPanel",
   props: {
-    hero: {
-      type: Object as PropType<HeroItem>,
+    panelItems: {
+      type: Array as PropType<Array<string>>,
     },
   },
   components: {
@@ -24,7 +23,38 @@ export default defineComponent({
     TypeSubHeader,
     TypeBody,
   },
+  emits: {
+    reveal(isPanelOpen: boolean) {
+      console.log('emitted');
+    }
+  },
   setup(props) {
+    const isPanelOpen = ref(false);
+
+    const navPanelIcon = () => {
+      if (isPanelOpen.value) {
+        return 'faX';
+      }
+      else {
+        return 'faBars';
+      }
+    };
+
+    function togglePanel() {
+      if (isPanelOpen.value) {
+        isPanelOpen.value = false;
+      }
+      else {
+        isPanelOpen.value = true;
+      }
+      return isPanelOpen.value;
+    };
+
+    return {
+      isPanelOpen,
+      togglePanel,
+      navPanelIcon,
+    }
   },
 });
 </script>

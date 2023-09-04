@@ -13,7 +13,7 @@
 import { snakeCase, camelCase } from "lodash";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faFile, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faFile, faBars,faX } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { IconSizes } from "@/constants/enums";
 
@@ -22,6 +22,7 @@ const FAIcons = Object.freeze({
   faLinkedin,
   faFile,
   faBars,
+  faX,
 });
 
 const CustomIcons = Object.freeze({});
