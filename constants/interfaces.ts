@@ -1,3 +1,9 @@
+export interface NavigationItem {
+    github:string,
+    linkedIn:string,
+    resume:string,
+}
+
 export interface HeroItem {
     image:string,
     alt:string,

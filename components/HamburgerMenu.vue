@@ -8,27 +8,17 @@ import BaseIcon from "@/components/BaseIcon.vue";
 import TypeHeader from "@/components/TypeHeader.vue";
 import TypeSubHeader from "./TypeSubHeader.vue";
 import TypeBody from "./TypeBody.vue";
-import { defineComponent, PropType, ref } from "vue";
+import { defineComponent, ref } from "vue";
 
 export default defineComponent({
-  name: "HamburgerPanel",
-  props: {
-    panelItems: {
-      type: Array as PropType<Array<string>>,
-    },
-  },
+  name: "HamburgerMenu",
   components: {
     BaseIcon,
     TypeHeader,
     TypeSubHeader,
     TypeBody,
   },
-  emits: {
-    reveal(isPanelOpen: boolean) {
-      console.log('emitted');
-    }
-  },
-  setup(props) {
+  setup() {
     const isPanelOpen = ref(false);
 
     const navPanelIcon = () => {

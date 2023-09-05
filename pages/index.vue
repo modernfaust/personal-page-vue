@@ -1,6 +1,6 @@
 <template>
   <div class="bg-slate-100">
-    <NavBar/>
+    <NavBar :navItems="copy.navItems"/>
     <Hero :hero="copy.hero"/>
     <Experience :experience="copy.experience"/>
     <Projects :projects="copy.projects"/>
