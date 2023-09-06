@@ -1,21 +1,9 @@
 const content = {
-  //fix this
   navItems: {
     github: "https://github.com/modernfaust",
-    linkedIn: "https://www.linkedin.com/in/edward-lee-183b878b",
+    linkedin: "https://www.linkedin.com/in/edward-lee-183b878b",
     resume: "www.github.com",
   },
-  navItems: [
-    {
-      github: "https://github.com/modernfaust",
-    },
-    {
-      linkedIn: "https://www.linkedin.com/in/edward-lee-183b878b",
-    },
-    {
-      resume: "www.github.com",
-    },
-  ],
   hero: {
     image: "/shiba_inu.png",
     alt: "hero_banner",

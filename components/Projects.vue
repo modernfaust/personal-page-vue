@@ -1,5 +1,5 @@
 <template>
-    <div class="py-8 flex flex-col items-center w-full">
+    <section class="py-8 flex flex-col items-center w-full">
       <TypeHeader class="text-blue-900" tag="h1" variant="peta" weight="strong">Projects</TypeHeader>
       <div v-for="(item,index) in projects" class="flex flex-col items-center w-2/3 laptop:w-1/2">
         <FeatureCard
@@ -10,7 +10,7 @@
         />
         <BaseDivider v-if="index != projects.length - 1"/>
       </div>
-    </div>
+    </section>
   </template>
   <script lang="ts">
   import FeatureCard from "@/components/FeatureCard.vue";

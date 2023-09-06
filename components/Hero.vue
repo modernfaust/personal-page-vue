@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center laptop:flex-row w-full">
+  <section class="flex flex-col items-center laptop:flex-row w-full">
     <div class="w-1/2 flex flex-col items-center">
       <div class="flex flex-col items-center laptop:items-start">
         <TypeHeader class="text-blue-900" variant="peta" weight="strong">
@@ -14,7 +14,7 @@
       </div>
     </div>
     <img class="w-1/2 object-scale-down" :src="hero?.image" :alt="hero?.alt"/>
-  </div>
+  </section>
 </template>
 <script lang="ts">
 import Icon from "@/components/BaseIcon.vue";

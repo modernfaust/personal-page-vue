@@ -1,4 +1,4 @@
-export interface NavigationItem {
+export interface NavigationItems {
     github:string,
     linkedIn:string,
     resume:string,
