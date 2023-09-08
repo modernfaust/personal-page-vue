@@ -13,7 +13,7 @@
         <a href="https://github.com/modernfaust">
           <BaseIcon class="text-blue-900" icon="faGithub" size="medium" />
         </a>
-        <a href="https://www.linkedin.com/in/edward-lee-183b878b">
+        <a href="https://www.linkedin.com/in/edward-lee-dev">
           <BaseIcon class="text-blue-900" icon="faLinkedin" size="medium" />
         </a>
         <a href="www.github.com">

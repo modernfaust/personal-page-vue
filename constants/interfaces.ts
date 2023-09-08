@@ -12,6 +12,13 @@ export interface HeroItem {
     description:string,
 }
 
+export interface Feature {
+    image:string,
+    header:string,
+    subheader:string,
+    description:string,
+}
+
 export interface ExperienceItem {
     image:string,
     alt:string,

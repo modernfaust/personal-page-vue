@@ -2,6 +2,7 @@
   <div class="bg-slate-100">
     <NavBar :navItems="copy.navItems"/>
     <Hero :hero="copy.hero"/>
+    <FeatureSummary :feature="copy.feature"/>
     <Experience :experience="copy.experience"/>
     <Projects :projects="copy.projects"/>
     <Footer/>
@@ -12,6 +13,7 @@
 import Vue from 'vue'
 import NavBar from '@/components/NavBar.vue';
 import Hero from '@/components/Hero.vue';
+import FeatureSummary from '@/components/FeatureSummary.vue';
 import Experience from '@/components/Experience.vue';
 import Footer from '@/components/Footer.vue';
 import copy from "@/constants/copy.js";
@@ -22,6 +24,7 @@ export default Vue.extend({
   components: {
     NavBar,
     Hero,
+    FeatureSummary,
     Experience,
     Footer,
     copy,

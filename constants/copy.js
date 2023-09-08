@@ -1,7 +1,7 @@
 const content = {
   navItems: {
     github: "https://github.com/modernfaust",
-    linkedin: "https://www.linkedin.com/in/edward-lee-183b878b",
+    linkedin: "https://www.linkedin.com/in/edward-lee-dev/",
     resume: "www.github.com",
   },
   hero: {
@@ -10,6 +10,12 @@ const content = {
     header: "Hi, I'm Edward",
     subheader: "I'm a software engineer in Toronto",
     description: "",
+  },
+  feature: {
+    image: "/laptop_image.webp",
+    header: "Innovation and Iteration",
+    subheader: "",
+    description:"I began my journey writing automation scripts for work and attending night school to master computer science. Since then, I've produced software used by huge companies to earn and save millions. I'm now working in the web development space to make cool and innovative tech.",
   },
   experience: [
     {

@@ -1,9 +1,7 @@
 <template>
-    <div class="py-8 flex flex-col items-center w-full">
-      <TypeHeader class="text-blue-900" tag="h1" variant="peta" weight="strong">{{ feature.header }}</TypeHeader>
-      <TypeSubHeader class="text-blue-900" tag="h3">{{ feature.subheader }}</TypeSubHeader>
-      <TypeBody class="text-blue-900">{{ feature.description }}</TypeBody>
-    </div>
+    <section class="py-8 flex flex-col items-center w-full">
+      
+    </section>
   </template>
   <script lang="ts">
   import { defineComponent, PropType } from "vue";
