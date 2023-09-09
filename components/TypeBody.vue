@@ -37,7 +37,7 @@ export default {
   font-size: 0.5rem;
 }
 .type-body-medium {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 .type-body-large {
   font-size: 1.5rem;

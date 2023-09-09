@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col items-center mx-28 border-2 shadow-xl rounded-md m-2 w-full">
-    <div class="flex flex-col items-center p-8">
+  <div class="flex flex-col items-center bg-slate-100 mx-28 border-2 shadow-xl rounded-md m-2 w-full">
+    <div class="flex flex-col items-center p-8 w-full">
       <a :href="url"><img class="w-40" :src="image" :alt="alt"/></a>
       <TypeHeader class="text-blue-900">{{ name }}</TypeHeader>
       <TypeSubHeader class="text-blue-900" weight="strong">{{ subheader }}</TypeSubHeader>
@@ -11,9 +11,9 @@
         </li>
         <BaseTag variant="solid"></BaseTag>
       </ul>
-      <ul v-if="hasDescription()" class="flex flex-col p-8 gap-2 list-disc text-blue-900">
+      <ul v-if="hasDescription()" class="flex flex-col p-8 gap-4 list-disc w-full">
         <li v-if="description" v-for="item in description">
-          <TypeBody >{{ item }}</TypeBody>
+          <TypeBody class="text-blue-900" variant="medium">{{ item }}</TypeBody>
         </li>
       </ul>
     </div>

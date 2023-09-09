@@ -5,17 +5,20 @@ const content = {
     resume: "www.github.com",
   },
   hero: {
-    image: "/shiba_inu.png",
-    alt: "hero_banner",
+    image: "",
+    alt: "",
     header: "Hi, I'm Edward",
     subheader: "I'm a software engineer in Toronto",
     description: "",
   },
   feature: {
     image: "/laptop_image.webp",
+    alt: "laptop_lamp_cactus_coffee",
+    avatar: "/avatar.png",
+    avatarAlt: "asian_programmer",
     header: "Innovation and Iteration",
     subheader: "",
-    description:"I began my journey writing automation scripts for work and attending night school to master computer science. Since then, I've produced software used by huge companies to earn and save millions. I'm now working in the web development space to make cool and innovative tech.",
+    description:"From small VBA scripts to production grade web components, I solve hard problems in creative ways. Since entering tech, I've produced software that saves companies millions. I'm now working in the world of web development.",
   },
   experience: [
     {
@@ -26,15 +29,11 @@ const content = {
       position: "Software Engineering Intern",
       date: "February 2023 to Present",
       description: [
-        "Engineered and maintained modular, responsive and reusable UI components in Vue, utilizing in-house libraries to enhance SEO by 15%.",
-        "Integrated BuilderIO (visual content management system) into a Nuxt app by refactoring build parameters, enabling the marketing team to autonomously author new pages with custom Vue components and optimizing page development by 40%.",
-        "Resolved server side rendering load de-sync bug in production by refactoring Nuxt route generation, optimizing load times by 75%.",
+        "Engineered and maintained modular, responsive and reusable UI components in Vue.",
+        "Integrated CMS to enable the marketing team to autonomously author new pages, optimizing page development by 40%.",
+        "Conducted code reviews, increasing the code quality by providing constructive feedback and mentoring other interns.",
         "Improved core repositories by reviewing code as per company standard, encouraging areas of improvement and ensuring code quality.",
-        "Interfaced daily with a team of 4 engineers, communicating with product and QA in an Agile environment to ensure product quality and continuous improvement.",
-        "Resolved urgent frontend rendering bugs by reproducing errors in dev environment, re-engineering the code and developing timely fixes.",
         "Authored technical documentation in Confluence detailing the setup up of API endpoints in new repositories, which reduced developer onboarding time by 50%.",
-        "Researched frontend optimization opportunities by analyzing bundle sizes of historical commits, writing a report to reduce Single Page Application startup time by 30%.",
-        "Debugged and performed QA on live web applications to ensure cross-browser compatibility, responsiveness and optimal performance.",
       ],
     },
     {
@@ -47,8 +46,8 @@ const content = {
       description: [
         "Refactored and maintained process automation & data visualization modules in VBA, resulting in a 40% decrease in task time for the operations department.",
         "Developed SQL queries and stored procedures to debug application bugs in production, providing timely resolution to issues.",
-        "Collaborated with product and engineering in an Agile environment to organize the development, testing and deployment of new business solutions.",
-        "Performed end-to-end testing for new app deployments by validating backend calls to the frontend, ensuring that response data is valid and data is rendered to the frontend per design specs.",
+        "Collaborated within Agile teams, coordinating the development, testing, and deployment of novel business solutions.",
+        "Conducted end-to-end testing for new application releases, validating backend-to-frontend communication, data rendering, and adherence to design specifications.",
       ],
     },
   ],
@@ -68,7 +67,7 @@ const content = {
     },
     {
       image: "",
-      projectName: "Mutual Funds Order Processing Tools",
+      projectName: "Mutual Funds Order Modules",
       languages: ["VBA", "SQL", "Python", "Bash"],
       description: [
         "Proprietary tooling & automation modules for Broadridge enhancing back office mutual funds transaction processing",

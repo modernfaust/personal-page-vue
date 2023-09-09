@@ -1,8 +1,8 @@
 <template>
-    <div class="py-8 flex flex-col items-center w-full">
-      <TypeHeader class="text-blue-900" tag="h1" variant="peta" weight="strong">{{ feature.header }}</TypeHeader>
-      <TypeSubHeader class="text-blue-900" tag="h3">{{ feature.subheader }}</TypeSubHeader>
-      <TypeBody class="text-blue-900">{{ feature.description }}</TypeBody>
+    <div class="py-8 flex flex-col gap-4 items-center w-full laptop:px-72" :class="variant === 'dark' ? 'bg-gray-200': ''">
+      <TypeSubHeader class="text-blue-900" tag="h3" weight="strong" variant="large">{{ feature.subheader }}</TypeSubHeader>
+      <TypeHeader class="text-blue-900" tag="h1" variant="tera" weight="strong">{{ feature.header }}</TypeHeader>
+      <TypeBody class="text-blue-900 text-center" variant="large">{{ feature.description }}</TypeBody>
     </div>
   </template>
   <script lang="ts">
@@ -16,7 +16,11 @@
     name: "FeatureSummary",
     props: {
       feature: {
-        type: Object as PropType<Feature>
+        type: Object as PropType<Feature>,
+      },
+      variant: {
+        type: String as PropType<string>,
+        default: 'light',
       },
     },
     components: {

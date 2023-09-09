@@ -14,6 +14,9 @@ export interface HeroItem {
 
 export interface Feature {
     image:string,
+    alt:string,
+    avatar:string,
+    avatarAlt:string,
     header:string,
     subheader:string,
     description:string,
