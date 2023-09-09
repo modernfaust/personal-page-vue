@@ -5,7 +5,7 @@
     <Feature :feature="copy.feature"/>
     <Experience :experience="copy.experience"/>
     <Projects :projects="copy.projects"/>
-    <Footer/>
+    <Footer :navItems="copy.navItems"/>
   </div>
 </template>
 

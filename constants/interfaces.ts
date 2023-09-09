@@ -1,6 +1,6 @@
 export interface NavigationItems {
     github:string,
-    linkedIn:string,
+    linkedin:string,
     resume:string,
 }
 

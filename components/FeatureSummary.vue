@@ -1,8 +1,11 @@
 <template>
-    <div class="py-8 flex flex-col gap-4 items-center w-full laptop:px-72" :class="variant === 'dark' ? 'bg-gray-200': ''">
-      <TypeSubHeader class="text-blue-900" tag="h3" weight="strong" variant="large">{{ feature.subheader }}</TypeSubHeader>
-      <TypeHeader class="text-blue-900" tag="h1" variant="tera" weight="strong">{{ feature.header }}</TypeHeader>
-      <TypeBody class="text-blue-900 text-center" variant="large">{{ feature.description }}</TypeBody>
+    <div class="p-16 flex flex-col items-center w-full laptop:px-72" :class="variant === 'dark' ? 'bg-gray-200': ''">
+      <div class="flex flex-col gap-4 items-center max-w-[1280px]">
+        <TypeSubHeader class="text-blue-900" tag="h3" weight="strong" variant="large">{{ feature.subheader }}</TypeSubHeader>
+        <TypeHeader class="text-blue-900" tag="h1" variant="tera" weight="strong">{{ feature.header }}</TypeHeader>
+        <TypeBody class="text-blue-900 text-center" variant="large">{{ feature.description }}</TypeBody>
+      </div>
+      
     </div>
   </template>
   <script lang="ts">

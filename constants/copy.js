@@ -2,7 +2,7 @@ const content = {
   navItems: {
     github: "https://github.com/modernfaust",
     linkedin: "https://www.linkedin.com/in/edward-lee-dev/",
-    resume: "www.github.com",
+    resume: "https://www.dropbox.com/scl/fi/8wd6jo3b4d9t4er8mjvy5/Lee_Edward_Resume.pdf?rlkey=z7v3fgqiltgw7x8vivptrgunp&dl=0",
   },
   hero: {
     image: "",
@@ -67,7 +67,7 @@ const content = {
     },
     {
       image: "",
-      projectName: "Mutual Funds Order Modules",
+      projectName: "Mutual Fund Order Modules",
       languages: ["VBA", "SQL", "Python", "Bash"],
       description: [
         "Proprietary tooling & automation modules for Broadridge enhancing back office mutual funds transaction processing",

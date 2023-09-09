@@ -10,13 +10,13 @@
         @reveal="(value) => revealPanel(value)"
       />
       <div v-else class="flex flex-row gap-4 ms-auto">
-        <a href="https://github.com/modernfaust">
+        <a :href="navItems?.github">
           <BaseIcon class="text-blue-900" icon="faGithub" size="medium" />
         </a>
-        <a href="https://www.linkedin.com/in/edward-lee-dev">
+        <a :href="navItems?.linkedin">
           <BaseIcon class="text-blue-900" icon="faLinkedin" size="medium" />
         </a>
-        <a href="www.github.com">
+        <a :href="navItems?.resume">
           <BaseIcon class="text-blue-900" icon="faFile" size="medium" />
         </a>
       </div>

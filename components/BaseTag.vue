@@ -27,7 +27,7 @@ export default defineComponent({
         },
         bgColor: {
             type:String as PropType<string>,
-            default:"bg-blue-400",
+            default:"bg-blue-500",
         },
         variant: {
             type:String as PropType<string>,
