@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-100">
+  <div class="bg-slate-100 overflow-hidden">
     <NavBar :navItems="copy.navItems"/>
     <Hero :hero="copy.hero"/>
     <Feature :feature="copy.feature"/>

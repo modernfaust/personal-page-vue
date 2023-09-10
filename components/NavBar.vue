@@ -2,7 +2,7 @@
   <nav class="w-full">
     <div class="flex mx-8 py-4 lg:mx-24">
       <router-link to="/"
-        ><img class="h-10" src="../assets/images/logo.png" alt="edward_logo"
+        ><img class="h-10" :src="navItems?.logo" :alt="navItems?.logoAlt"
       /></router-link>
       <HamburgerMenu
         v-if="mobileMode"

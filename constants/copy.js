@@ -1,5 +1,7 @@
 const content = {
   navItems: {
+    logo: "/babel_blue.png",
+    logoAlt:"tower_of_babel_blue_logo",
     github: "https://github.com/modernfaust",
     linkedin: "https://www.linkedin.com/in/edward-lee-dev/",
     resume: "https://www.dropbox.com/scl/fi/8wd6jo3b4d9t4er8mjvy5/Lee_Edward_Resume.pdf?rlkey=z7v3fgqiltgw7x8vivptrgunp&dl=0",

@@ -1,4 +1,6 @@
 export interface NavigationItems {
+    logo:string,
+    logoAlt:string,
     github:string,
     linkedin:string,
     resume:string,
