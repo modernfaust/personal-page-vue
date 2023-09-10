@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col items-center laptop:flex-row w-full">
     <div class="flex flex-col items-center py-12" :class="hero?.image.length > 0 ? 'w-1/2' : 'w-full'">
-      <div class="flex flex-col items-center" :class="hero?.image.length > 0 ? 'laptop:items-start' : 'laptop:items-center'">
+      <div class="flex flex-col items-center mx-4" :class="hero?.image.length > 0 ? 'laptop:items-start' : 'laptop:items-center'">
         <TypeHeader class="text-blue-900" variant="peta" weight="strong">
           {{ hero?.header }}
         </TypeHeader>

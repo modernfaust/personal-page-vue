@@ -11,7 +11,7 @@
           <BaseIcon class="text-blue-900" icon="faFile" size="medium" />
         </a>
     </div>
-    <TypeBody class="text-blue-900" variant="large">{{`Copyright ©${copyright} Edward Lee. All rights reserved`}}.
+    <TypeBody class="text-blue-900 text-xl laptop:text-2xl">{{`Copyright ©${copyright} Edward Lee. All rights reserved`}}.
     </TypeBody>
   </div>
 </template>

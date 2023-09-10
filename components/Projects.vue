@@ -1,7 +1,7 @@
 <template>
     <section class="py-8 flex flex-col items-center w-full">
       <TypeHeader class="text-blue-900 py-8" tag="h1" variant="peta" weight="strong">Projects</TypeHeader>
-      <div v-for="(item,index) in projects" class="flex flex-col items-center w-full laptop:w-1/2">
+      <div v-for="(item,index) in projects" class="flex flex-col items-center mx-4 w-full laptop:w-1/2">
         <FeatureCard
           :image="item.image"
           :name="item.projectName"
