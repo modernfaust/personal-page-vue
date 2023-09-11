@@ -50,7 +50,6 @@ export default defineComponent({
         default:
           navigationIcon.value = "faFile";
       }
-      console.log("this rendered", navigationIcon.value);
       return navigationIcon.value;
     }
 

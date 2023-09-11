@@ -59,8 +59,13 @@ export default defineComponent({
   setup(props) {
     const mobileMode = ref(false);
     const isPanelOpen = ref(false);
-    const panelItemsArray = computed(() =>
-      props.navItems ? Object.keys(props.navItems) : []
+    const panelItemsArray = computed(() => {
+      let navItems = props.navItems ? Object.keys(props.navItems) : [];
+
+      return navItems.filter((item) => {
+        return item !== 'logo' && item !== 'logoAlt';
+      })
+    }
     );
 
     function revealPanel(value) {
